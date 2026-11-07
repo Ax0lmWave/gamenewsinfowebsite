@@ -10,14 +10,31 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  margin: .5%;
   height: 80px;
-  background-color: rgba(69, 19, 154, 0.326);
+  background-color: rgba(69, 19, 154, 0.51);
+  border: #421192 solid;
   box-shadow: 5px 5px 25px rgba(69, 19, 154, 0.3);
   position: sticky;
+  border-radius: 10px;
 }
 
-.header-logo img{
+#header-logo img{
   height: 50px; 
+}
+
+#bg-hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+  overflow: hidden;
+  opacity: 20%;
+  filter: blur(10px);
+  transform: scale(1.05);
 }
 
 .eyebrow {
