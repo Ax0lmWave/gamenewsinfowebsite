@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>GTA VI</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="media/gta6_logo.webp">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
@@ -21,14 +22,19 @@
         <a href="#">Новости</a>
       </div>
   </header>
-  <video autoplay muted loop playsinline id="bg-hero-video">
-    <source src="media/gta-bg-video.mp4" type="video/mp4">
-  </video>
+
   <main class="hero-main">
-    <p class="eyebrow">Rockstar Games® · Vice City</p>
+    <video autoplay muted loop playsinline id="bg-hero-video">
+      <source src="media/gta-bg-video.mp4" type="video/mp4">
+    </video>
+    <p class="eyebrow">Rockstar Games ® · Vice City</p>
     <h1>Grand Theft Auto VI</h1>
     <p class="subtitle">Знаменитый город Vice City возвращается снова в тренд. История будет развивать сюжетную линию двух персонажей Джейсона и Люсии. По канону оба будут латиноамериканцы, а их история напоминать "Бонни и Клайд" в криминальном сетинге.</p>
-    <button type="button">Подробнее</button>
+    <div id="audio-player">
+      <audio id="bg-music" loop></audio>
+      <button id="play-button" class="music-button">▶</button>
+      <button id="skip-button" class="music-button"> Skip ⏭</button>
+    </div>
   </main>
 
   <section class="info">
@@ -74,5 +80,6 @@
   <footer class="info">
     <p>Фанатский сайт о Grand Theft Auto VI. Made with love</p>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 </html>
