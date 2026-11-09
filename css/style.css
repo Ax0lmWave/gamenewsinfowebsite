@@ -106,5 +106,12 @@ header {
 
 .info {
   text-align: center;
+  border: 5px solid #ff4fa3;
 }
 
+.info-section {
+  display: grid;
+  grid-template-columns: repeat(2, 500px);
+  gap: 30px;
+  justify-content: center;
+}
