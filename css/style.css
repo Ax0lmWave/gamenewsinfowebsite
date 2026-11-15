@@ -114,4 +114,11 @@ header {
   grid-template-columns: repeat(2, 500px);
   gap: 30px;
   justify-content: center;
+  list-style: none;
+  border-radius: 10px;
+}
+
+footer p{
+  display: flex;
+  justify-content: center;
 }
