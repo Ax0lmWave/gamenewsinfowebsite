@@ -62,6 +62,12 @@ header {
     justify-content: center;
   }
 }
+.nav-links > a:hover {
+  background-color: #7b00fe;
+  box-shadow: none;
+  font-weight: 900;
+  transform: scale(1.1);
+}
 
 .hero-main {
   margin: 100px auto;
@@ -112,7 +118,6 @@ header {
   justify-items: center;
   gap: 10px;
   height: 220px;
-  box-sizing: border-box;
   padding: 20px;
   border-radius: 10px;
   background: #a200ff;
@@ -146,7 +151,7 @@ header {
 .info-section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  width: 90%;
+  width: 80%;
   max-width: 1200px;
   gap: 23px;
   margin: 0 auto 32px;
