@@ -141,6 +141,7 @@ header {
   background: #a200ff;
   text-align: center;
   border: 5px #846ecd solid;
+  transition: transform 0.3s ease;
 }
 
 .info h2,
@@ -284,3 +285,7 @@ footer p{
   display: flex;
   justify-content: center;
 } 
+
+.info:hover {
+  transform: scale(1.1);
+}
