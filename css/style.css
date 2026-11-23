@@ -141,6 +141,10 @@ header {
   background: #a200ff;
   text-align: center;
   border: 5px #846ecd solid;
+  transition: transform 0.3s ease-in-out;
+}
+.info:hover {
+  transform: scale(1.05);
 }
 
 .info h2,
@@ -283,4 +287,213 @@ header {
 footer p{
   display: flex;
   justify-content: center;
-} 
+}
+
+.world-page {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.world-intro {
+  margin: 70px auto 50px;
+  text-align: center;
+}
+
+.world-intro h1 {
+  margin: 12px 0;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 48px;
+  text-shadow: 0 0 25px #846ecd;
+}
+
+.world-intro > p:last-child {
+  color: #ddd;
+  font-size: 18px;
+}
+
+.world-overview {
+  display: grid;
+  grid-template-columns: 1fr 40%;
+  align-items: center;
+  gap: 30px;
+  padding: 24px;
+  border: 3px solid #421192;
+  border-radius: 12px;
+  background: rgba(69, 19, 154, 0.3);
+}
+
+.world-overview h2,
+.world-route h2 {
+  margin: 8px 0;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 30px;
+}
+
+.world-overview p,
+.world-stop div > p:last-child {
+  color: #ddd;
+  line-height: 1.6;
+}
+
+.world-overview img {
+  width: 100%;
+  max-height: 460px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.world-label,
+.world-stop-number {
+  margin: 0;
+  color: #ff4fa3;
+  font-family: 'Ubuntu', sans-serif;
+  letter-spacing: 1px;
+}
+
+.world-route {
+  margin: 70px 0;
+}
+
+.world-route-intro {
+  color: #ddd;
+}
+
+.world-roadmap {
+  margin: 32px 0 0 20px;
+  padding: 0 0 0 30px;
+  border-left: 3px solid #846ecd;
+  list-style: none;
+}
+
+.world-stop {
+  position: relative;
+  display: grid;
+  grid-template-columns: 40% 1fr;
+  align-items: center;
+  gap: 24px;
+  margin: 0 0 28px;
+  padding: 18px;
+  border: 2px solid #421192;
+  border-radius: 12px;
+  background: rgba(69, 19, 154, 0.25);
+}
+
+.world-stop::before {
+  position: absolute;
+  top: 50%;
+  left: -42px;
+  width: 18px;
+  height: 18px;
+  border: 4px solid #120b1d;
+  border-radius: 50%;
+  background: #ff4fa3;
+  content: "";
+  transform: translateY(-50%);
+}
+
+.world-stop:nth-child(even) img {
+  order: 2;
+}
+
+.world-stop img {
+  width: 100%;
+  height: 210px;
+  border-radius: 8px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.world-stop .world-map-north {
+  object-position: center 12%;
+}
+
+.world-stop .world-map-port {
+  object-position: center 35%;
+}
+
+.world-stop .world-map-ambrosia {
+  object-position: center 55%;
+}
+
+.world-stop .world-map-grassrivers {
+  object-position: center 78%;
+}
+
+.world-stop .world-map-keys {
+  object-position: center 96%;
+}
+
+.world-stop h3 {
+  margin: 8px 0;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 24px;
+}
+
+.world-stop div > p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 600px) {
+  .world-page {
+    width: calc(100% - 32px);
+  }
+
+  .world-intro {
+    margin: 40px auto 30px;
+  }
+
+  .world-intro h1 {
+    font-size: 34px;
+  }
+
+  .world-intro > p:last-child {
+    font-size: 16px;
+  }
+
+  .world-overview {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 16px;
+  }
+
+  .world-overview h2,
+  .world-route h2 {
+    font-size: 25px;
+  }
+
+  .world-overview img {
+    max-height: 360px;
+  }
+
+  .world-route {
+    margin: 45px 0;
+  }
+
+  .world-roadmap {
+    margin-left: 8px;
+    padding-left: 22px;
+  }
+
+  .world-stop {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    padding: 14px;
+  }
+
+  .world-stop:nth-child(even) img {
+    order: 0;
+  }
+
+  .world-stop::before {
+    left: -34px;
+  }
+
+  .world-stop img {
+    height: 190px;
+  }
+
+  .world-stop h3 {
+    font-size: 21px;
+  }
+}
